@@ -1,0 +1,133 @@
+html {
+	position: relative;
+	min-height: 100%;
+	font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	html {
+		font-size: 20px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	html {
+		font-size: 28px;
+	}
+}
+
+@media (min-width:768px){html {font-size: 14px;}}
+@media (min-width:992px){html {font-size: 20px;}}
+@media (min-width:1200px){html {font-size: 28px;}}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #3d3d3d;
+	margin-bottom: 4rem;
+}
+body > .container {
+	padding-top: 10px;
+}
+
+.footer {
+  position:fixed;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:1030;
+  width: 100%;
+  background-color: #343e50;
+}
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.bg-dark {
+	background-color: #343e50 !important;
+}
+.navbar-brand {
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	font-size: 0.95rem;
+	margin-right: 3rem;
+}
+.navbar-toggler {
+	border: 0;
+	color: #576a8a;
+	outline-style: none;
+}
+button.navbar-toggler {
+	outline-style: none;
+}
+@media (max-width:768px) {.navbar table {width: 100%;}}
+.w-95{width:95%!important}
+
+.mounth_rez {
+	background: #3f4d66 url(../img/bg1.gif) repeat-x 0 0;
+	text-align: center;
+	color: #fff;
+	padding-top: 6.2rem;
+	padding-bottom: 2.7rem;
+	font-size: 1.4rem;
+	line-height: 3.6rem;
+}
+.mounth_rez .total_sum {
+	font-size: 3rem;
+}
+
+
+
+.nav-pills .nav-link{border-radius:0}
+.top_tabs .nav-link {
+	background: #343e50;
+	color: #fff;
+	font-size: 0.95rem;
+	line-height: 1.8rem;
+}
+.top_tabs .nav-link.active {
+	background: #fedd2c;
+	color: #3d3d3d;
+}
+.top_tabs .total_sum {
+	font-size: 1.5rem;
+}
+
+
+
+.bottom_tabs .nav-link {
+	background: #343e50;
+	color: #fff;
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+.bottom_tabs .nav-link.active {
+	background: #272d37;
+}
+
+.billing_list {
+	margin-bottom: 1rem;
+}
+.billing_list thead th {
+	color: #75afd0;
+	font-weight: normal;
+	text-transform: uppercase;
+	/*padding: 0.8rem 0;
+	font-size: 0.9rem;*/
+	border: 0;
+}
+.billing_list tbody tr td:last-child {
+	text-align: right;
+	white-space: nowrap;
+}
+.billing_list tbody tr:first-child td {
+	border-top: 0;
+}
