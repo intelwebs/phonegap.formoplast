@@ -1,5 +1,5 @@
 $(function(){
-	navigator.notification.prompt('Введите пароль', function(result) {}, 'Идентификация', ['Ввод']);
+	//navigator.notification.prompt('Введите пароль', function(result) {}, 'Идентификация', ['Ввод']);
 
 	$.ajax({
 		url: app.ajax,
