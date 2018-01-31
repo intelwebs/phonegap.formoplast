@@ -1,4 +1,3 @@
-'use strict';
 $(function(){
 	//navigator.notification.prompt('Введите пароль', function(result) {}, 'Идентификация', ['Ввод']);
 
@@ -20,7 +19,7 @@ $(function(){
 
 	$('body').swipe({
 		swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-			for (let i in event.path) {
+			for (var i in event.path) {
 				if (typeof ($(event.path[i]).data('swipe-' + direction)) !== 'function') continue;
 
 				$(event.path[i]).data('swipe-' + direction)(event.path[i]);
