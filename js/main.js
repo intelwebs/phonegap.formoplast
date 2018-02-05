@@ -1,3 +1,4 @@
+"use strict";
 $(function(){
 	//navigator.notification.prompt('Введите пароль', function(result) {}, 'Идентификация', ['Ввод']);
 
