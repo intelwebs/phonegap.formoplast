@@ -18,13 +18,20 @@ $(function(){
 	$('#mounth_rez').data('swipe-right', function(obj) { app.changeMonth(obj, -1); });
 
 	$('body').swipe({
-		swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-			for (var i in event.path) {
+		swipeLeft: function(event, direction, distance, duration, fingerCount, fingerData) {
+			for (let i in event.path) {
 				if (typeof ($(event.path[i]).data('swipe-' + direction)) !== 'function') continue;
 
 				$(event.path[i]).data('swipe-' + direction)(event.path[i]);
 			}
-		}
+		},
+		swipeRight: function(event, direction, distance, duration, fingerCount, fingerData) {
+			for (let i in event.path) {
+				if (typeof ($(event.path[i]).data('swipe-' + direction)) !== 'function') continue;
+
+				$(event.path[i]).data('swipe-' + direction)(event.path[i]);
+			}
+		},
 	});
 });
 
