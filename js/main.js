@@ -19,6 +19,7 @@ $(function(){
 
 	$('body').swipe({
 		swipeLeft: function(event, direction, distance, duration, fingerCount, fingerData) {
+			console.log(event);
 			for (var i in event.path) {
 				if (typeof ($(event.path[i]).data('swipe-' + direction)) !== 'function') continue;
 
@@ -26,6 +27,7 @@ $(function(){
 			}
 		},
 		swipeRight: function(event, direction, distance, duration, fingerCount, fingerData) {
+			console.log(event);
 			for (var i in event.path) {
 				if (typeof ($(event.path[i]).data('swipe-' + direction)) !== 'function') continue;
 
@@ -34,6 +36,8 @@ $(function(){
 		},
 	});
 });
+
+app.initialize();
 
 var app = {
 	ajax: 'http://bx.ftoroplast4.ru/local/mobile/formoplast.php',
@@ -55,6 +59,7 @@ var app = {
 	},
 
 	changeMonth: function(obj, dir) {
+		console.log(obj);
 		var id = $('.container', obj).data('id');
 		$.ajax({
 			url: app.ajax,
