@@ -9,6 +9,7 @@
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="false" />
+    <preference name="StatusBarOverlaysWebView" value="false"/>
     <preference name="android-minSdkVersion" value="14" />
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" />
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
@@ -50,7 +51,9 @@
         <icon src="www/res/icon/ios/icon-72@2x.png" width="144" height="144" />
         <icon src="www/res/icon/ios/icon-50@1x.png" width="50" height="50" />
         <icon src="www/res/icon/ios/icon-50@2x.png" width="100" height="100" />
-        <splash src="www/res/splash/ios/736h.png" width="1242" height="2208" platform="ios" />
+        <splash src="www/res/splash/ios/640.png" width="640" height="1136" platform="ios" />
+        <splash src="www/res/splash/ios/750.png" width="750" height="1334" platform="ios" />
+        <splash src="www/res/splash/ios/1242.png" width="1242" height="2208" platform="ios" />
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
