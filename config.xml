@@ -50,7 +50,7 @@
         <icon src="www/res/icon/ios/icon-72@2x.png" width="144" height="144" />
         <icon src="www/res/icon/ios/icon-50@1x.png" width="50" height="50" />
         <icon src="www/res/icon/ios/icon-50@2x.png" width="100" height="100" />
-        <splash src="www/res/splash/ios/Default-736h.png" width="1242" height="2208" platform="ios" />
+        <splash src="www/res/splash/ios/736h.png" width="1242" height="2208" platform="ios" />
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
