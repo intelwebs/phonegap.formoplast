@@ -11,9 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script type="text/javascript" src="js/fontawesome-all.min.js"></script>
 	<script>
-		function OnLoad() {
+		window.varDeviceReady = false;
+		function OnDeviceReady() {
+			window.varDeviceReady = true;
 		}
-		document.addEventListener('deviceready', OnLoad, false);
+		document.addEventListener('deviceready', OnDeviceReady, false);
 	</script>
 	<title>Мобильное приложение</title>
 </head>
