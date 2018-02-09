@@ -12,13 +12,13 @@
 	<script type="text/javascript" src="js/fontawesome-all.min.js"></script>
 	<script>
 		function OnLoad() {
-			document.addEventListener('deviceready', app.onDeviceReady, false);
 		}
+		document.addEventListener('deviceready', OnLoad, false);
 	</script>
 	<title>Мобильное приложение</title>
 </head>
 
-<body onload="OnLoad();">
+<body>
 	<header>
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 			<table>
@@ -61,7 +61,7 @@
 		</nav>
 	</footer>
 
-	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	<script type="text/javascript" src="js/hammer.min.js"></script> 
 	<script type="text/javascript" src="js/jquery.js"></script> 
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
