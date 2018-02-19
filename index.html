@@ -29,35 +29,27 @@
 		</nav>
 	</header>
 
-	<div style="background:#485978">
-		<div id="mounth_rez" class="mounth_rez"><i>(загрузка)</i></div>
-	</div>
-	
-	<ul class="nav nav-pills nav-fill top_tabs">
-		<li class="nav-item">
-			<span id="yestoday_rez" class="nav-link">
-				<i>(загрузка)</i>
-			</span>
-		</li>
-		<li class="nav-item">
-			<span id="today_rez" class="nav-link active">
-				<i>(загрузка)</i>
-			</span>
-		</li>
-	</ul>
-	
-	<main role="main" class="container">
-		<div id="list_rez" class="table-responsive-sm">
-			<i>(загрузка)</i>
+	<div id="mainContentSlider" data-interval="false" data-hammer="" class="carousel sl ide">
+		<div class="carousel-inner">
+			<div class="carousel-item text-center active" style="height:100vh;padding-top:100px;background-color:#485978;color:white">
+				<img src="res/icon/ios/icon-76@3x.png">
+				<p><i>(загрузка)</i></p>
+			</div>
+			<div id="mainMenuContent" class="carousel-item"></div>
+			<div class="carousel-item text-center" style="height:100vh;padding-top:100px;background-color:#485978;color:white">
+				<img src="res/icon/ios/icon-76@3x.png">
+				<p><i>(загрузка)</i></p>
+			</div>
 		</div>
-	</main>
+	</div>
 
 	<footer class="footer fixed-bottom">
-		<nav class="nav nav-pills nav-fill bottom_tabs">
-			<span class="nav-item nav-link active"><i class="fas fa-ruble-sign fa-lg"></i><br>деньги</span>
+		<nav id="bottomMenu" class="nav nav-pills nav-fill bottom_tabs">
+			<span class="nav-item nav-link" data-menu="money"><i class="fas fa-ruble-sign fa-lg"></i><br>деньги</span>
+			<span class="nav-item nav-link" data-menu="stat"><i class="fas fa-ruble-sign fa-lg"></i><br>статистика</span>
 		</nav>
 	</footer>
-	
+
 	<div class="modal fade" id="appModal" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
